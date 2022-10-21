@@ -1,20 +1,29 @@
 import 'package:get/get.dart';
+import 'package:getx_pattern/app/modules/auth/walkthrough/intro_binding.dart';
+import 'package:getx_pattern/app/modules/auth/walkthrough/intro_modify.dart';
+import 'package:getx_pattern/app/modules/home_screen/binding.dart';
+import 'package:getx_pattern/app/modules/home_screen/view.dart';
+import 'package:getx_pattern/app/modules/login/binding.dart';
+import 'package:getx_pattern/app/modules/login/view.dart';
+part './app_routes.dart';
 
-import '../modules/home/bindings/home_binding.dart';
-import '../modules/home/views/home_view.dart';
+abstract class AppPages {
+  static final pages = [
 
-part 'app_routes.dart';
-
-class AppPages {
-  AppPages._();
-
-  static const INITIAL = Routes.HOME;
-
-  static final routes = [
     GetPage(
-      name: _Paths.HOME,
-      page: () => HomeView(),
-      binding: HomeBinding(),
+      name: Routes.BOARD,
+      page: () => IntroScreen1(),
+      binding: IntroBinding(),
+    ),
+    GetPage(
+      name: Routes.LOGIN,
+      page: () => const LoginPage(),
+      binding: LoginBinding(),
+    ),
+    GetPage(
+      name: Routes.HOME,
+      page: () =>  HomeScreenPage(),
+      binding: HomeScreenBinding(),
     ),
   ];
 }

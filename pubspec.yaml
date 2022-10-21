@@ -8,6 +8,23 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.6.5
+  intl: ^0.17.0
+  sizer: 2.0.15
+  flutter_dotenv: ^5.0.2
+  get_storage: ^2.0.3
+  flutter_svg: ^1.0.3
+  provider: ^6.0.2
+  http: ^0.13.4
+  path_provider: ^2.0.8
+  permission_handler: ^8.3.0
+  smooth_page_indicator: ^1.0.0+2
+  mask_text_input_formatter: ^2.3.0
+  form_field_validator: ^1.1.0
+  flutter_spinkit: ^5.1.0
+  modal_progress_hud_nsn: ^0.1.0-nullsafety-1
+  dio: ^4.0.4
+  fluttericon: ^2.0.0
+  enum_to_string: 2.0.1
   flutter: 
     sdk: flutter
 
@@ -19,3 +36,48 @@ dev_dependencies:
 flutter: 
   uses-material-design: true
 
+  assets:
+  - assets/
+  - assets/image/
+  - .env
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/font/Cairo-Regular.ttf
+        - asset: assets/font/Cairo-SemiBold.ttf
+        - asset: assets/font/Cairo-Medium.ttf
+        - asset: assets/font/Cairo-Bold.ttf
+        - asset: assets/font/Cairo-Light.ttf
+        - asset: assets/font/Cairo-ExtraBold.ttf
+        - asset: assets/font/Cairo-ExtraLight.ttf
+        - asset: assets/font/Cairo-Black.ttf
+
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
